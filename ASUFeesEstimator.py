@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-url = "https://students.asu.edu/tuition"
+url = ""
 
 def asu_fees_estimator(student_status, location, college, program):
     driver = webdriver.Chrome()
@@ -47,6 +47,6 @@ def asu_fees_estimator(student_status, location, college, program):
 if __name__ == "__main__":
     student_status = "Graduate"
     location = "Online"
-    college = "Business, W. P. Carey School of "
+    college = ""
     program = "Business Analytics, M.S.,"
     asu_fees_estimator(student_status, location, college, program)
