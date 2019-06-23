@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 url = ""
 
-def asu_fees_estimator(student_status, location, college, program):
+def fees_estimator(student_status, location, college, program):
     driver = webdriver.Chrome()
     driver.maximize_window()
     
@@ -49,4 +49,4 @@ if __name__ == "__main__":
     location = "Online"
     college = ""
     program = "Business Analytics, M.S.,"
-    asu_fees_estimator(student_status, location, college, program)
+    fees_estimator(student_status, location, college, program)
